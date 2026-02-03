@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>VIP AI 84 MODEL</title>
+<title>VIP AI 84 MODEL – ULTIMATE</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,9 +18,9 @@
 </div>
 
 <div class="card">
-  <span class="badge">PHÂN TÍCH MD5</span>
-  <input id="md5input" placeholder="MD5 32 ký tự hex">
-  <button onclick="analyzeMD5()">🧠 PHÂN TÍCH MD5</button>
+  <span class="badge">PHÂN TÍCH MD5 / SHA</span>
+  <input id="md5input" placeholder="MD5 (32) hoặc SHA-256 (64)">
+  <button onclick="analyzeMD5()">🧠 PHÂN TÍCH HASH</button>
   <div class="box" id="md5Result"></div>
 </div>
 
@@ -32,9 +32,23 @@
 </div>
 
 <div class="card">
-  <span class="badge">KẾT LUẬN CUỐI</span>
+  <span class="badge">KẾT LUẬN CUỐI (VIP)</span>
   <button onclick="finalDecision()">🔥 KẾT LUẬN</button>
   <div class="box" id="finalResult"></div>
+</div>
+
+<div class="card">
+  <span class="badge">📊 DASHBOARD VIP</span>
+  <div class="small" id="vipStat">Chưa có dữ liệu</div>
+  <div class="small" id="vipModels"></div>
+  <button onclick="resetVIP()">♻️ Reset AI</button>
+</div>
+
+<div class="card">
+  <span class="badge">🧾 NHẬP KẾT QUẢ THỰC</span>
+  <button onclick="submitResult('T')">✅ KQ: TÀI</button>
+  <button onclick="submitResult('X')">✅ KQ: XỈU</button>
+  <div class="small" id="learnStat"></div>
 </div>
 
 </div>
